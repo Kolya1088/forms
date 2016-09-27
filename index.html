@@ -1,20 +1,40 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title> </title>
+        <title>Form</title>
+        <meta charset="UTF-8">
     </head>
     <body>
-    <form action="https://formspree.io/tatarenko1088@gmail.com" method="POST">
-            <label for="name">Name:<br></label>
-            <input type="text" name="name" id="name" required>
-            <br>
-            <label for="email">Email:<br></label>
-            <input type="email" name="email" id="email" required>
-            <br>
-            <label for="comment">Comment:<br></label>
-            <textarea name="comment" id="comment"></textarea>
-            <br>
-            <input type="submit" name="submit" value="OK">
-    </form>
+        <h3>Форма для регистрации участников</h3>
+        <form="action" method="POST">
+            <label for="name">Имя</label>
+                <br>
+            <input type="text" name="name" id="name" placeholder="Имя" reqiured>
+                <br>
+            <label for="surname">Фамилия</label>
+                <br>
+            <input type="text" name="surname" id="surname" placeholder="Фамилия" reqiured>        
+                <br>
+            <label for="email">Email</label>
+                <br>
+            <input type="email" name="email" id="email" placeholder="Email" reqiured>
+                <br>
+            <p>Выберете курс, который вы бы хотели посещать:</p>
+            <input type="radio" name="course" value="PHP">PHP
+                <br>
+            <input type="radio" name="course" value="Lisp">Lisp
+                <br>   
+            <input type="radio" name="course" value="Perl">Perl
+                <br>
+            <input type="radio" name="course" value="Unix">Unix
+                <br>
+            <p>Что вы хотите, чтобы мы знали о Вас?</p>
+            <textarea name="comment" rows="8" cols="35" id="comment" placeholder="Ваше сообщение"></textarea>
+                <br>
+            <input type="checkbox" name="confirm" value="first_checkbox" checked>Подтвердить получение
+                <br>
+            <input type="submit" name="submit" value="Отправить">
+             <input type="submit" name="submit" value="Отменить">
+        </form>
     </body>
 </html>
